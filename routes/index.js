@@ -36,7 +36,7 @@ router.get("/artist-search", (req, res, next) => {
     );
 });
 // SOLUTION with async/await
-// app.get('/artist-search', async (req, res, next) => {
+// router.get('/artist-search', async (req, res, next) => {
 //   const { artist } = req.query;
 //   try {
 //     const promise = await spotifyApi.searchArtists(artist);
