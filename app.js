@@ -36,5 +36,5 @@ app.use("/", indexRouter);
 
 const PORT = process.env.PORT;
 app.listen(PORT || 3000, () =>
-  console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊")
+  console.log(`My Spotify project running on port ${PORT} 🎧 🥁 🎸 🔊`)
 );
