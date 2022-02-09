@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv/config");
 
 const express = require("express");
 const hbs = require("hbs");
@@ -34,6 +34,7 @@ const indexRouter = require("./routes/index");
 // 👇 Handling routes here
 app.use("/", indexRouter);
 
-app.listen(3000, () =>
+const PORT = process.env.PORT;
+app.listen(PORT || 3000, () =>
   console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊")
 );
